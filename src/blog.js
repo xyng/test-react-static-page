@@ -34,8 +34,6 @@ export default locals => {
 	const css = assets.filter(value => value.match(/\.css$/))
 	const js = assets.filter(value => value.match(/\.js$/))
 
-	console.log(css);
-
 	const page = ReactDOMServer.renderToString(
 		<StaticRouter location={locals.path} context={{}}>
 			{routes}
